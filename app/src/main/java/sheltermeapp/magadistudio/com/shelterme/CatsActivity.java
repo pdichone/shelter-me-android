@@ -32,6 +32,7 @@ import sheltermeapp.magadistudio.com.shelterme.model.Animal;
 
 public class CatsActivity extends Activity {
 
+    //Let's hope the API is not overused by strangers!
 	
 	private final String TAG = CatsActivity.class.getSimpleName();
 	private final String urlString = "http://app-service.pawsonitmedia.com/api/shelter/id/1/species/2/format/json"; //cats
