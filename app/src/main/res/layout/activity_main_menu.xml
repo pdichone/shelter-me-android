@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.magadistudio.shelterme.MainMenu" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo"
+        android:src="@drawable/logo" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="310dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:background="#dfc" />
+
+    <Button
+        android:id="@+id/catButton"
+        style="@style/customButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="23dp"
+        android:layout_below="@id/view"
+        android:text="@string/cat_button_title"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/rottentsButton"
+        style="@style/customButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="@string/rabbit_button_title"
+        android:textSize="23sp"
+        android:layout_below="@+id/dogButton"
+        android:layout_alignRight="@+id/view"
+        android:layout_alignEnd="@+id/view" />
+
+    <Button
+        android:id="@+id/dogButton"
+        style="@style/customButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/logo"
+        android:layout_alignTop="@+id/catButton"
+        android:layout_marginTop="107dp"
+        android:text="@string/dog_button_title"
+        android:textSize="23sp" />
+
+</RelativeLayout>

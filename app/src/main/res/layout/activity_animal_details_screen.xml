@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="189dp"
+        android:orientation="vertical"
+        android:background="@drawable/round_bg"
+        android:id="@+id/topLayer">
+
+        <TextView
+            android:id="@+id/animalName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fussy"
+            android:textColor="@color/GhostWhite"
+            android:textStyle="bold"
+            android:textSize="@dimen/title"
+            android:padding="5dp"/>
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/detailsThumbnail"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/animalName"
+            android:layout_marginTop="0dp"/>
+
+        <TextView
+            android:id="@+id/animalId"
+            android:layout_toRightOf="@id/detailsThumbnail"
+            android:layout_marginLeft="20dp"
+            android:text="AnimalId:"
+            android:textColor="@color/LightGrey"
+            android:textSize="13sp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailsBreed"
+            android:textColor="@color/LightGrey"
+            android:textSize="13sp"
+            android:layout_below="@id/animalId"
+            android:layout_toRightOf="@id/detailsThumbnail"
+            android:layout_marginLeft="20dp"
+            android:text="Breed:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailsAge"
+            android:textColor="@color/LightGrey"
+            android:textSize="13sp"
+            android:layout_below="@id/detailsBreed"
+            android:layout_toRightOf="@id/detailsThumbnail"
+            android:layout_marginLeft="20dp"
+            android:text="Age:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailsGender"
+            android:textColor="@color/LightGrey"
+            android:textSize="13sp"
+            android:layout_below="@id/detailsAge"
+            android:layout_toRightOf="@id/detailsThumbnail"
+            android:layout_marginLeft="20dp"
+            android:text="Gender:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailsColor"
+            android:textColor="@color/LightGrey"
+            android:textSize="13sp"
+            android:layout_below="@id/detailsGender"
+            android:layout_toRightOf="@id/detailsThumbnail"
+            android:layout_marginLeft="20dp"
+            android:text="Color:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailsSpayed"
+            android:textColor="@color/LightGrey"
+            android:textSize="13sp"
+            android:layout_below="@id/detailsColor"
+            android:layout_toRightOf="@id/detailsThumbnail"
+            android:layout_marginLeft="20dp"
+            android:text="Spayed/Neutered:"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detailsSize"
+            android:textColor="@color/LightGrey"
+            android:textSize="13sp"
+            android:layout_below="@id/detailsSpayed"
+            android:layout_toRightOf="@id/detailsThumbnail"
+            android:layout_marginLeft="20dp"
+            android:text="Size:"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/aboutAnimalText"
+        android:textSize="@dimen/title"
+        android:text="About Me"
+        android:layout_below="@id/topLayer"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/GhostWhite"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--Description ScrollView -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="315dp"
+        android:layout_height="125dp"
+        android:layout_below="@id/aboutAnimalText"
+        android:layout_marginTop="10dp"
+        android:background="@color/Orchid"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp">
+
+         <TextView
+             android:id="@+id/detailsDescription"
+             android:textAlignment="center"
+             android:text="lipsoooooo"
+
+             android:layout_marginTop="5dp"
+             android:textColor="@color/Black"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+        </ScrollView>
+
+    <TextView
+        android:id="@+id/memoText"
+        android:layout_below="@id/scrollView"
+        android:text="Memo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/GhostWhite"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/detailsArrived"
+        android:layout_below="@id/memoText"
+        android:text="Arrived:"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/Orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/detailsPrice"
+        android:layout_below="@id/detailsArrived"
+        android:text="Price:"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/Orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/detailsDeclawed"
+        android:layout_below="@id/detailsPrice"
+        android:text="Declawed:"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/Orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>
